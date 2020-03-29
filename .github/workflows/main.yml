@@ -23,4 +23,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: kedro-action
-      uses: WaylonWalker/kedro-action@1.0.3
+      uses: WaylonWalker/kedro-action@2.0.0
