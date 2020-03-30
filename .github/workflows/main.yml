@@ -27,3 +27,4 @@ jobs:
       with:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
         verbose: true
+        should_run: false
