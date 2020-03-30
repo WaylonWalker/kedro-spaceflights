@@ -349,18 +349,10 @@ def build_docs(open_docs):
     """Build the project documentation."""
     python_call("pip", ["install", "src/[docs]"])
     python_call("pip", ["install", "-r", "src/requirements.txt"])
-    python_call(
-        "ipykernel", ["install", "--user", "--name=spaceflights"]
-    )
+    python_call("ipykernel", ["install", "--user", "--name=spaceflights"])
     shutil.rmtree("docs/build", ignore_errors=True)
     call(
-        [
-            "sphinx-apidoc",
-            "--module-first",
-            "-o",
-            "docs/source",
-            "src/spaceflights",
-        ]
+        ["sphinx-apidoc", "--module-first", "-o", "docs/source", "src/spaceflights",]
     )
     call(["sphinx-build", "-M", "html", "docs/source", "docs/build", "-a"])
     if open_docs:
