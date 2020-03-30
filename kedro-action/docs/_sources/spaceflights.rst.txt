@@ -1,0 +1,36 @@
+spaceflights package
+====================
+
+.. automodule:: spaceflights
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    spaceflights.nodes
+    spaceflights.pipelines
+
+Submodules
+----------
+
+spaceflights.pipeline module
+----------------------------
+
+.. automodule:: spaceflights.pipeline
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+spaceflights.run module
+-----------------------
+
+.. automodule:: spaceflights.run
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
